@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script src="https://js.puter.com/v2/"></script>
+    <title>My Test Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="main" id="main" onload="load()">
+    <h1>Nathan Bot</h1>
+    <input type="text" name="input" placeholder="Enter prompt" size="80" id="input" onkeypress="keyPress(event, this)">
+        <select id="model" name="model">
+            <option value="NB1">NathanBot</option>
+            <option value="gpt-4.1">ChatGPT 4.1</option>
+            <option value="gpt-5-mini">ChatGPT 5 mini</option>
+            <option value="google/gemini-2.5-flash">Gemini 2.5 flash</option>
+            <option value="qwen/qwen-max">Qwen Max</option>
+            <option value="cohere/command">Cohere Command</option>
+        </select>
+    </input>
+</body>
+</html>
